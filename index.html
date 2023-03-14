@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haircut Appointments</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+    <body class="container">
+    <div id="new-appointment" class="jumbotron">
+      <h2>Add New Haircut Appointment</h2>
+      <div class="row">
+        <div class="col-sm">
+          <input
+            type="text"
+            id="new-appointment-name"
+            class="form-control"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="col-sm">
+          <input
+            type="text"
+            id="new-appointment-date"
+            class="form-control"
+            placeholder="Date"
+            required
+          />
+        </div>
+      </div>
+
+      <br />
+      <button id="add-new-appointment" class="btn btn-primary form-control">
+        Add New Appointment
+      </button>
+    </div>
+
+    <div id="appointments" class="row"></div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
